@@ -1,0 +1,20 @@
+language: python
+matrix:
+  include:
+  - python: 2.6
+    env: TOXENV=py26
+  - python: 2.7
+    env: TOXENV=py27
+  - python: 3.4
+    env: TOXENV=py34
+  - python: 3.5
+    env: TOXENV=py35
+  - python: 3.6
+    env: TOXENV=py36
+dist: trusty
+install:
+- pip install tox
+script: tox
+env:
+  global:
+    secure: oaSqmRg2KkNQRCBVPgXhhFm/tDeuh7QFG/wUO2NJ3E+IidWFKgrvwex8/y9d0BuIj8AaJexbL93JsF/Ep8qrgGxsi9NcinweIVE3yHJbUYnkYa0ERUSCeW1JugjTeW2PiwqJMPyWCLdbqtbpD8ISg/Fm7Z6SWZHGJS6+lWbvaJ2L8ogPhb2/oBNjJg9t7YeGX8PfpWA7IfQ7boa0LhWOU2v2R85KAc7Ki2dnhdA3QfawH+6Pnt5UUIrhhadWgi6cg1rVxlnpA75ZmHFs470Kz2MMpmokYEkyOprTzEkn0XBaSbCkwjXDMBgmAt8CmRskT+6920h6sRRRnL11nRhaDOlgmJwRsA2c6ODvN1zRjMbHrlK7NXWImT5NCVgPvH+Ruluo08djriBUbE+9IehM26LL8D0eo2BweX5K33aay0MJvq1cVcQaConpEuygILGTPTiWe5hAHyaYbVs2ABMzs+o1tC1VimkQFLBsnuQmvoEhMbvKcdO9/HorJDBzkvTsaChp6Bk2PQba0mQww+XEUQ0SHTZEOrK96Gnb4oq45dJvKtR4SEFJOuCe7Eg7SHlkZRLUu2QQ+bz26vD/oGQ1D0oC2elA9KrUxsVIDdRGIQ8dxCh+ufJKN+s3yMa/SaSt0Gaq7Yj+U1fSSfM5p7ZbVWOep61z4Kr0mXbLe6YV/fo=
